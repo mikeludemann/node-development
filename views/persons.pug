@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Persons
+  div(id='personlist')
+    each person in persons
+      p #{person.firstname + ' '+ person.lastname}
+      p #{person.street + ' '+ person.streetnumber}
+      p #{person.postalcode + ' '+ person.city}
+    
